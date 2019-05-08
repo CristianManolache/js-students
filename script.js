@@ -2,13 +2,12 @@
 // - Creare un array di oggetti di studenti. Ciclare su tutti gli studenti e stampare per ognuno nome e cognome
 // - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 console.log("-----------Benvenuti classe 5^----------------");
-var studente = [
-  {
+var studente = {
     "nome": "Cristian",
     "cognome": "Manolache",
     "eta": "23"
-  }
-]
+  };
+
 for (var field in studente) {
   console.log(studente[field]);
 }
@@ -40,7 +39,7 @@ var classe = [
     "eta": "45"
   }
 ];
-classe.push(studente);      //inserisco l studente nell array clase.
+// classe.push(studente);      //inserisco l studente nell array classe.
 
 for (var i = 0; i < classe.length; i++) {
   console.log(classe[i].nome + "" + classe[i].cognome);
@@ -60,6 +59,6 @@ classe.push(nuovo_studente);  //inserisco l studente nuovo nell array classe.
 //Stampo i studenti compreso quello nuovo
 function print_studenti(lista_studenti) {
   for (var i = 0; i < lista_studenti.length; i++) {
-    console.log(lista_studenti[i].nome + " " + lista_studenti[i].cognome)
+    console.log(lista_studenti[i].nome + " " + lista_studenti[i].cognome);
   }
 }
